@@ -34,6 +34,7 @@
             this.txtNumero2 = new System.Windows.Forms.TextBox();
             this.btnSuma = new System.Windows.Forms.Button();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.btnResta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNumero1
@@ -87,11 +88,22 @@
             this.lblResultado.TabIndex = 5;
             this.lblResultado.Text = "Resultado";
             // 
+            // btnResta
+            // 
+            this.btnResta.Location = new System.Drawing.Point(100, 268);
+            this.btnResta.Name = "btnResta";
+            this.btnResta.Size = new System.Drawing.Size(75, 23);
+            this.btnResta.TabIndex = 6;
+            this.btnResta.Text = "Resta";
+            this.btnResta.UseVisualStyleBackColor = true;
+            this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnResta);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnSuma);
             this.Controls.Add(this.txtNumero2);
@@ -113,6 +125,7 @@
         private System.Windows.Forms.TextBox txtNumero2;
         private System.Windows.Forms.Button btnSuma;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Button btnResta;
     }
 }
 
