@@ -35,6 +35,7 @@
             this.btnSuma = new System.Windows.Forms.Button();
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnResta = new System.Windows.Forms.Button();
+            this.btnDividir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNumero1
@@ -98,11 +99,22 @@
             this.btnResta.UseVisualStyleBackColor = true;
             this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
             // 
+            // btnDividir
+            // 
+            this.btnDividir.Location = new System.Drawing.Point(100, 317);
+            this.btnDividir.Name = "btnDividir";
+            this.btnDividir.Size = new System.Drawing.Size(75, 23);
+            this.btnDividir.TabIndex = 7;
+            this.btnDividir.Text = "Dividir";
+            this.btnDividir.UseVisualStyleBackColor = true;
+            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDividir);
             this.Controls.Add(this.btnResta);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnSuma);
@@ -126,6 +138,7 @@
         private System.Windows.Forms.Button btnSuma;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnResta;
+        private System.Windows.Forms.Button btnDividir;
     }
 }
 
